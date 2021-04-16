@@ -1,0 +1,65 @@
+teclado= int(input("Aperte 0 para finalizar ou 1 para continuar"))
+salario_minimo=1100
+identificacao=""
+folha_pagamento=0.0
+peca_total=0
+quantidade_masculino=0
+quantidade_feminino=0
+peca_masculina=0
+peca_feminina=0
+salario_maior=0
+identificacao_salario_maior=""
+
+def calcular_salario(peca):
+    if(peca<=30):
+        return salario_minimo
+    elif(peca>30 and peca<=50):
+        return salario_minimo+(0.01*peca)
+    else:
+        return salario_minimo+(0.03*peca)
+        
+
+while(teclado!=0):
+    dado_identificacao=int(input("A identificacao do funcionario "))
+    dado_peca= int(input("Numero de peca "))
+    dado_sexo= str(input(" M- Masculino F-Feminino"))
+    
+    
+        
+    salario=float(calcular_salario(dado_peca))
+    folha_pagamento+=salario
+    peca_total+=dado_peca
+    identificacao+="\n"+"Idenficacao funcionario : "+str(dado_identificacao)+" Salario do funcionario: "+str(salario)+"\n"
+  
+    if(salario>salario_maior):
+        salario_maior=salario
+        identificacao_salario_maior="Identificacao salario maior "+str(dado_identificacao)
+
+    if(dado_sexo=="m" or dado_sexo=="M"):
+        quantidade_masculino+=1
+        peca_masculina+=dado_peca
+    else:
+        peca_feminina+=dado_peca
+        quantidade_feminino+=1
+
+
+
+    teclado= int(input("Aperte 0 para finalizar ou 1 para continuar"))
+
+def media_genero(dado_quantidade, dado_pecas):
+    if(dado_quantidade>0):
+        return float(dado_pecas/dado_quantidade)
+    else:
+        return 0.0
+    
+    
+print(identificacao)
+print("Folha de pagamento",folha_pagamento)
+print("NUmero total de pecas", peca_total)
+print("Media de pecas masculina: %.2f"% media_genero(quantidade_masculino,peca_masculina ))
+print("Media de pecas feminina: %.2f"%  media_genero(quantidade_feminino,peca_feminina ))
+print(identificacao_salario_maior)
+
+
+    
+    
