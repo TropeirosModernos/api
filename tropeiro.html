@@ -1,0 +1,378 @@
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <style>
+    .container-fluid {
+      padding: 0.5rem
+    }
+
+    h2 {
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: white
+    }
+
+    body {
+      background: #111111
+    }
+
+    .table {
+      /* background-color:rgb(255, 255, 255) */
+    }
+
+    .bg-light {
+      background: #000000 !important;
+      color: white;
+    }
+
+    .navbar-light .navbar-brand {
+      color: #ffffff
+    }
+
+    td,
+    p {
+      color: #a3cf06;
+    }
+    .btn-outline-success:hover {
+    color: #fff;
+    background-color: #a3cf06;;
+    border-color: #a3cf06;
+}
+
+    /* p {
+      color: red;
+    } */
+  </style>
+  <script>
+    function somar(x, y) {
+      return x + y;
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tropeiros Modernos</a>
+
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="padding-left: 5px;">Tropeiros Modernos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <h2> Tropeiros Modernos Database</h2>
+          <p>Esta ferramenta oferece uma visão alternativa dos dados gerados pelo Data Studio e tudo em seu banco de
+            dados.
+
+            <br />Consulte nosso <a
+              href="https://datastudio.google.com/u/1/reporting/e0f205ca-4d36-4648-bea0-324692d41eca/page/RTSCC">Data
+              Studio</a> se tiver alguma dúvida sobre o Tropeiros Modernos Database.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Estados</th>
+              <th scope="col">Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>São Paulo</td>
+              <td>39962</td>
+
+            </tr>
+            <tr>
+
+              <td>Minas Gerais</td>
+              <td>14006</td>
+
+            </tr>
+            <tr>
+              <td>Paraíba</td>
+              <td>11564</td>
+
+            </tr>
+            <tr>
+              <td>Pernambuco</td>
+              <td>9848</td>
+
+            </tr>
+            <tr>
+              <td>Ceará</td>
+              <td>5494</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Região</th>
+              <th scope="col">Média de chamado por mês</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>Sudeste</td>
+              <td>1048</td>
+
+            </tr>
+            <tr>
+
+              <td>Nordeste</td>
+              <td>620</td>
+
+            </tr>
+            <tr>
+              <td>Sul</td>
+              <td>78</td>
+
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="col">
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Região</th>
+              <th scope="col">Quantidade de serviços prestados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>Sul</td>
+              <td>20580</td>
+
+            </tr>
+            <tr>
+
+              <td>Nordeste</td>
+              <td>17264</td>
+
+            </tr>
+            <tr>
+              <td>Sudeste</td>
+              <td>16200</td>
+
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+
+              <th scope="col">Empresa</th>
+              <th scope="col">Quantidade de chamados</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+
+              <td>Accenture</td>
+              <td>320</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Amazon</td>
+              <td>312</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Microsoft</td>
+              <td>294</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Cisco</td>
+              <td>230</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Movidesk</td>
+              <td>166</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Google</td>
+              <td>150</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Amway</td>
+              <td>148</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Sophos</td>
+              <td>126</td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <div class="col">
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Estados</th>
+              <th scope="col">Quantidade de chamados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td>São Paulo</td>
+              <td>720</td>
+
+            </tr>
+            <tr>
+
+              <td>Minas Gerais</td>
+              <td>328</td>
+
+            </tr>
+            <tr>
+              <td>Pernambuco</td>
+              <td>220</td>
+
+            </tr>
+            <tr>
+              <td>Paraíba</td>
+              <td>248</td>
+
+            </tr>
+            <tr>
+              <td>Ceará</td>
+              <td>96</td>
+
+            </tr>
+
+            <tr>
+              <td>Rio Grande do Sul</td>
+              <td>78</td>
+
+            </tr>
+
+            <tr>
+              <td>Bahia</td>
+              <td>56</td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
